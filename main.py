@@ -9,7 +9,7 @@ cv2.imshow("goruntu isleme resmi yeni .png",renkli) # Resmin rekli halini ekrana
 #BU KISIMDA RESMİ GRİ SEVİYE GÖRÜNTÜ OLARAK ALDIK.
 foto = cv2.imread("goruntu isleme resmi.png",0) # Resmi gri seviye görüntü ile almak.
 cv2.imshow("goruntu isleme resmi yeni .png",foto) # Gri görüntü halini ekrana bastırmak.
-
+cv2.waitKey()
 
 histSize = 256  # Histogram dizisinin boyutu
 histRange = (0, 256)   # Histogram dizisinin alacağı değerlerin aralığı
