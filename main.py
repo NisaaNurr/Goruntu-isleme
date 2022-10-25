@@ -1,6 +1,8 @@
 import cv2
 import numpy as np
 
+# NİSA NUR ÇELİK _ 02190201021 _ HİSTOGRAM HESAPLAMA ÖDEVİ
+
 #BU KISIMDA RESMİN RENKLİ HALİNİ OKUYUP BASTIRDIK.
 renkli = cv2.imread("goruntu isleme resmi.png") # Resmin renkli halini dosyadan okumak.
 cv2.imshow("goruntu isleme resmi yeni .png",renkli) # Resmin rekli halini ekrana bastırmak.
