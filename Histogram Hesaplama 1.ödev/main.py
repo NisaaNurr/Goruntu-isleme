@@ -20,15 +20,22 @@ Hist = np.zeros(256)  # Hist dizisinin içini sıfır diziyle doldurma
 w,h = foto.shape  # Girilen resmi eni ve boyu
 #print(w,h)  #eni ve boyu bastırma
 
-#
+# HİSTOGRAM HESAPLAMA
 for i in range(0, w):
     for j in range(0,h):
          indks = foto[i,j]  # Resmin her pikselini gezip bunun değerini bir değişkene atıyoruz.
          Hist[indks] +=1    # O pikselin değeri kaçsa o dizinin o elemanını bir arttıyoruz.
 
 
-# Histogram dizisini bastırma
+# HİSTOGRAMI DİZİ OLARAK BASTIRMA
 for i,indks in enumerate(Hist):
     print(f"{i} -> {indks}")
 
 
+
+# HİSTOGRAMI TABLO OLARAK BASTIRMA
+from matplotlib import pyplot as plt
+    plt.figure(2)
+    plt.plot(Hist)
+    plt.show()
+    cv2.waitKey()
