@@ -35,7 +35,7 @@ for i,indks in enumerate(Hist):
 
 # HİSTOGRAMI TABLO OLARAK BASTIRMA
 from matplotlib import pyplot as plt
-    plt.figure(2)
-    plt.plot(Hist)
-    plt.show()
-    cv2.waitKey()
+plt.figure(2)
+plt.plot(Hist)
+plt.show()
+cv2.waitKey()
